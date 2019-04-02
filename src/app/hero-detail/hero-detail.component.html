@@ -1,0 +1,11 @@
+<div *ngIf="hero">
+  Hero No. {{hero.no}} Details
+  <div>
+    <label>name</label>
+    <input [(ngModel)]="hero.name" placeholder="Enter name here"/>
+    <label>city</label>
+    <input [(ngModel)]="hero.city" placeholder="Enter City name here"/>
+    {{hero.name}} lives in {{hero.city}}.
+    <button (click)="add_duplicate()">Add Duplicate</button>
+  </div>
+</div>
