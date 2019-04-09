@@ -15,7 +15,7 @@ export class HeroListComponent implements OnInit {
   constructor(public heroService:HeroService) { }
 
   ngOnInit() {
-    this.heroes=this.heroService.getHeroes()
+    this.heroService.getHeroes()
       .subscribe((value: Hero[])=>{this.heroes=value},(error:any)=>{},()=>{});
   }
 
