@@ -1,4 +1,4 @@
 <ul>
-  <li *ngFor="let hero of heroService.getHeroes()" (click)="onSelect(hero)">{{hero.no}}. {{hero.name}}</li>
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">{{hero.no}}. {{hero.name}}</li>
 </ul>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>

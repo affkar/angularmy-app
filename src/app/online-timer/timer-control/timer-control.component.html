@@ -1,0 +1,5 @@
+  <button (click)="child.start()" [disabled]="child.isStarted">start timer</button>
+  <button (click)="child.stop()" [disabled]="!child.isStarted">stop timer</button>
+  <button (click)="child.reset()">reset</button>
+  <div class="seconds">{{child.timer}}</div>
+  <app-child #child></app-child>
